@@ -7,12 +7,12 @@
 - endereco
 - rfid
 - status
-  contratarPlano()
-	agendarAula()
-	cancelarAgendamento()
-	atualizarStatus()
-	registrarAcesso()
-	receberNotificacao()
+	- 	contratarPlano()
+	- 	agendarAula()
+	- 	cancelarAgendamento()
+	- 	atualizarStatus()
+	-	registrarAcesso()
+	- 	receberNotificacao()
 
 **Plano** - RF01, RF02, RF04
 - idPlano
@@ -20,8 +20,8 @@
 - tipo
 - valor
 - ativo
-  criarPlano()
-	editarPlano()
+	- 	criarPlano()
+	- 	editarPlano()
 
 **Pagamento** - RF03, RF04, RF09
 - idPagamento
@@ -29,41 +29,41 @@
 - valor
 - formaPagamento
 - status
-  registrarPagamento()
-	confirmarPagamento()
-	cancelarPagamento()
+	- 	registrarPagamento()
+	- 	confirmarPagamento()
+	- 	cancelarPagamento()
 
 **Acesso** - RF05, RF09
 - idAcesso
 - dataHora
 - autorizado
-  registrar()
-	autorizar()
-	negar()
+	- 	registrar()
+	- 	autorizar()
+	- 	negar()
 
 **Aula** - RF06, RF07, RF09
 - idAula
 - nome
 - horario
 - capacidadeMaxima
-  disponiblizarHorario()
-	reservarVaga()
-	liberarVaga()
-	registrarPresenca()
+	- 	disponiblizarHorario()
+	- 	reservarVaga()
+	- 	liberarVaga()
+	- 	registrarPresenca()
 
 **Agendamento** - RF06, RF10
 - idAgendamento
 - dataReserva
 - status
-  confirmar()
-	cancelar()
+	- 	confirmar()
+	- 	cancelar()
 
 **Presenca** - RF07
 - idPresenca
 - data
 - presente
-  registrar()
-	consultar()
+	- 	registrar()
+	- 	consultar()
 
 **AvaliacaoFisica** - RF08, RF10
 - idAvaliacao
@@ -73,9 +73,9 @@
 - percentualGordura
 - observacoes
 - anexo
-  registrar()
-	atualizarDados()
-	anexarArquivo()
+	- 	registrar()
+	- 	atualizarDados()
+	- 	anexarArquivo()
 
 **Notificacao** - RF10
 - idNotificacao
@@ -83,24 +83,24 @@
 - dataEnvio
 - status
 - mensagem
-  enviar()
-	marcarComoLida()
+	- 	enviar()
+	- 	marcarComoLida()
 
 **Instrutor** - RF07, RF08
 - idInstrutor
 - nome
 - especialidade
-  realizarAvaliacaoFisica()
-	registrarPresenca()
+	- 	realizarAvaliacaoFisica()
+	- 	registrarPresenca()
 
 **Recepcionista** - RF01, RF03
 - idRecepcionista
 - nome
-  cadastrarAluno()
-	registrarPagamento()
+	- 	cadastrarAluno()
+	- 	registrarPagamento()
 
 **Gerente** - RF02, RF09
 - idGerente
 - nome
-  gerenciarPlanos()
-	emitirRelatorios()
+	- 	gerenciarPlanos()
+	- 	emitirRelatorios()
